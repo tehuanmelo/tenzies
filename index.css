@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Karla, sans-serif;
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+    max-width: 80%;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+}
+
+.dice-container button {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-family: Karla, sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.roll-button {
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(143, 12, 199);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    font-family: Karla, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.roll-button:hover {
+    background-color: rgb(168, 32, 226);
+}
+.roll-button:active {
+    background-color: rgb(111, 0, 158);
+}
+
+.dice-container button.held {
+    background-color: aquamarine;
+}
