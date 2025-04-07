@@ -41,6 +41,13 @@ main {
     gap: 20px;
 }
 
+button {
+    all: unset;
+    box-sizing: border-box;
+    font-family: inherit;
+    cursor: pointer;
+  }
+
 .dice-container button {
     height: 50px;
     width: 50px;
