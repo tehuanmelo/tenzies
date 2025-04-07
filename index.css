@@ -87,7 +87,12 @@ button {
     background-color: aquamarine;
 }
 
-main > h1 {
+main h1 {
     font-size: 5rem;
 }
 
+.instructions {
+    font-size: 2.5rem;
+    margin: 0 20px;
+    text-align: center;
+}

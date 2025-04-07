@@ -77,8 +77,13 @@ export default function App() {
 
     return (
         <main style={{position: "relative"}}>
-            { gameWon ? <h1>You win</h1> : <h1>Tenzies</h1> }
-            <div style={styles}>
+            <h1>{gameWon ? "You win" : "Tenzies"}</h1>
+            {!gameWon && 
+            <p className="instructions">
+                Roll the dice until all of them show the same number. Click a die to freeze it at its current value between rolls.
+            </p>
+            }
+                        <div style={styles}>
                 {isExploding && <ConfettiExplosion />}
             </div>
             <div className="dice-container">
